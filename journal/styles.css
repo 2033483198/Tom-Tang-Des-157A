@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+article {
+    padding: 2rem 0;
+}
+
+p {
+    max-width: 60ch;
+    line-height: 1.6;
+}
+
+time {
+    font-size: 0.9rem;
+}
+
+a {
+    color: #245b76;
+    text-decoration: underline;
+}
