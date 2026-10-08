@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #222;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+}
+
+article {
+    background-color: white;
+    padding: 2.5rem;
+}
+
+article p {
+    max-width: 60ch;
+    margin: 1.5rem auto;
+}
+
+time {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #245b76;
+}
+
+a:hover {
+    text-decoration: none;
+}

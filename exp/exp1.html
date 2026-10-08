@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimentation Example</title>
+    <title>Experiment 1</title>
 </head>
+
 <body>
-    <h1>experiemntation Example</h1>
+
+    <h1>Experiment 1</h1>
+    <h2>Open the console to see the experiment.</h2>
 
     <script>
-        var sentence = "the quick brown fox jumped over the lazzy dog";
+        //Sequence
+        var sentence = "the quick brown fox jumped over the lazy dog";
+        var newSentence = "";
+        var capitalize = true;
 
-        var newSentence = ""
-        var capitalize =true;
-
-        for(var i=0; i < sentence.length; i++){
-            if(capitalize){
+        //Loop
+        for (var i = 0; i < sentence.length; i++) {
+            //Selection
+            if (capitalize) {
                 newSentence += sentence[i].toUpperCase();
-                capitalize = false;}
-            else{
-                if( sentence[i] === " "){
+                capitalize = false;
+            }
+            else {
+                if (sentence[i] === " ") {
                     capitalize = true;
                 }
+
                 newSentence += sentence[i];
             }
         }
 
         console.log(newSentence);
+
     </script>
+
 </body>
+
 </html>
