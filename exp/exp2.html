@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 2</title>
+    <h1 id="result"></h1>
+</head>
+<body>
+
+    <script>
+        // Change the page color when answer the color in the list
+        var colors = ['red', 'blue', 'yellow', 'green'];
+
+        function checkColor(answer) {
+            for (var i = 0; i < colors.length; i++) {
+                if (answer === colors[i]) {
+                    return colors[i];
+                }
+            }
+            return 'white';
+        }
+
+        function showColor() {
+            var answer = prompt('Choose red, blue, green or yellow:');
+            var color = checkColor(answer);
+
+            document.querySelector('body').style.backgroundColor = color;
+
+            if (color === 'white') {
+                document.querySelector('#result').innerHTML = 'Invalid color!';
+            }
+            else {
+                document.querySelector('#result').innerHTML = 'You chose ' + color;
+            }
+        }
+
+        showColor();
+
+    </script>
+</body>
+</html>
