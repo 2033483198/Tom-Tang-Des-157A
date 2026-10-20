@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Scientist - Mad Libs</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Alien Scientist</h1>
+            <h2>Data Collection</h2>
+        </header>
+
+        <main>
+            <section class="image-panel" aria-label="Alien scientist illustration">
+                <img src="images/alien-lab.png" width="734" height="550"
+                    alt="Alien scientist">
+            </section>
+
+            <form id="madlib-form">
+                <div class="fields">
+                    <div class="field">
+                        <label for="adjective">Adjective</label>
+                        <input type="text" id="adjective" placeholder="e.g. shiny" required>
+                    </div>
+                    <div class="field">
+                        <label for="object">Everyday Object</label>
+                        <input type="text" id="object" placeholder="e.g. toothbrush" required>
+                    </div>
+                    <div class="field">
+                        <label for="place">Public Place</label>
+                        <input type="text" id="place" placeholder="e.g. airport" required>
+                    </div>
+                    <div class="field">
+                        <label for="action">Body Action (-ing)</label>
+                        <input type="text" id="action" placeholder="e.g. dancing" required>
+                    </div>
+                    <div class="field">
+                        <label for="adverb">Adverb</label>
+                        <input type="text" id="adverb" placeholder="e.g. carefully" required>
+                    </div>
+                    <div class="field">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" placeholder="e.g. chef" required>
+                    </div>
+                    <div class="field">
+                        <label for="plural">Plural Objects</label>
+                        <input type="text" id="plural" placeholder="e.g. bananas" required>
+                    </div>
+                    <div class="field">
+                        <label for="emotion">Emotion</label>
+                        <input type="text" id="emotion" placeholder="e.g. jealousy" required>
+                    </div>
+                </div>
+                <input type="submit" value="ANALYZE">
+            </form>
+        </main>
+
+        
+        <section class="report-overlay" id="report" aria-label="Analysis report">
+            <header>
+                <h1>Alien Scientist</h1>
+                <h2>Analysis Report</h2>
+            </header>
+
+            <div class="report-layout">
+                <section class="report-images" aria-label="Report illustrations">
+                    <img class="specimen" src="images/specimen.png" width="380" height="480"
+                        alt="Specimen 0427: a mysterious box marked with a question mark">
+                    <img class="small-alien" src="images/small-alien.png" width="200" height="245"
+                        alt="A surprised alien scientist">
+                </section>
+
+                <article class="report-story">
+                    <div class="story-text">
+                        <p>In the year 3126, humans have disappeared from Earth.</p>
+
+                        <p>Today, our team discovered a <span class="word" data-word="adjective">[adjective]</span>
+                            <span class="word" data-word="object">[everyday object]</span> inside an abandoned
+                            <span class="word" data-word="place">[public place]</span>.</p>
+
+                        <p>Ancient images show that humans often stood near this object while
+                            <span class="word" data-word="action">[body action ending with ing]</span>.</p>
+
+                        <p>Dr. Zorp believes humans used it <span class="word" data-word="adverb">[adverb]</span>
+                            to train themselves to become a <span class="word" data-word="occupation">[occupation]</span>.</p>
+
+                        <p>This theory is supported by the large number of
+                            <span class="word" data-word="plural">[plural objects]</span> found nearby.</p>
+
+                        <p>We now believe that every morning, humans had to face their
+                            <span class="word" data-word="object">[everyday object]</span>, perform
+                            <span class="word" data-word="action">[body action]</span>, and express strong
+                            <span class="word" data-word="emotion">[emotion]</span> toward it before leaving home.</p>
+
+                        <p>The artifact has officially been classified as:</p>
+
+                        <p class="classification">"A <span class="word" data-word="adjective">[same adjective]</span>
+                            human career-training and emotional-control device."</p>
+                    </div>
+                    <button type="button" id="analyze-another">ANALYZE ANOTHER</button>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
