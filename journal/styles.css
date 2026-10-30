@@ -32,3 +32,19 @@ a {
     color: #245b76;
     text-decoration: underline;
 }
+
+figure {
+    margin: 0 0 1.5rem 0;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
