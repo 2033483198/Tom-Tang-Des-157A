@@ -33,7 +33,6 @@
             document.querySelector('#story-adjective-2').textContent = adjective;
 
             report.classList.add('show');
-            report.setAttribute('aria-hidden', 'false');
         } else {
             alert('Please fill out all eight fields.');
         }
@@ -41,7 +40,6 @@
     
     anotherButton.addEventListener('click', function () {
         report.classList.remove('show');
-        report.setAttribute('aria-hidden', 'true');
 
         document.querySelector('#adjective').value = '';
         document.querySelector('#object').value = '';
@@ -52,12 +50,5 @@
         document.querySelector('#plural').value = '';
         document.querySelector('#emotion').value = '';
     });
-
-    document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape' && report.classList.contains('show')) {
-        report.classList.remove('show');
-        report.setAttribute('aria-hidden', 'true');
-    }
-});
 
 })();
