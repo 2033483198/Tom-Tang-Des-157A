@@ -58,5 +58,6 @@
         report.classList.remove('show');
         report.setAttribute('aria-hidden', 'true');
     }
+});
 
 })();
