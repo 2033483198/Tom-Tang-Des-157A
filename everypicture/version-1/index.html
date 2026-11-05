@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Between Moments | Every Picture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <p class="eyebrow">DES 157A / EVERY PICTURE</p>
+            <h1>Between Moments</h1>
+        </header>
+
+        <section class="gallery">
+            <input type="checkbox" id="colorToggle">
+
+            <div class="gallery-viewer">
+                <button class="arrow previous" disabled aria-label="Previous photo">←</button>
+
+                <div class="photo-stage">
+                    <figure class="photo-card side-photo">
+                        <img src="images/photo6.jpg" alt="City lights and a river at dusk" width="1250" height="938">
+                    </figure>
+                    <figure class="photo-card">
+                        <img src="images/photo1.jpg" alt="Pink sky above a road and train tracks" width="1250" height="938">
+                    </figure>
+                    <figure class="photo-card side-photo">
+                        <img src="images/photo2.jpg" alt="Birds flying across the sunset sky" width="1250" height="938">
+                    </figure>
+                </div>
+
+                <button class="arrow next" disabled aria-label="Next photo">→</button>
+            </div>
+
+            <div class="gallery-controls">
+                <label for="colorToggle" class="color-button">
+                    <span class="show-bw">Show Black and White</span>
+                    <span class="show-color">Show Color</span>
+                </label>
+                <p>01 / 06</p>
+            </div>
+        </section>
+
+        <section class="details">
+            <p class="eyebrow">BEHIND THE FRAME</p>
+            <h2>Pink Hour by the Tracks</h2>
+            <p class="location">01 / THE ROAD</p>
+            <div class="story-lines">
+                <p>The road was busy, but the sky felt unusually calm.</p>
+                <p>The soft pink light made this everyday scene look different.</p>
+                <p>I wanted to remember this small moment before it disappeared.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Every Picture by Tom Tang</p>
+        </footer>
+    </main>
+</body>
+</html>
