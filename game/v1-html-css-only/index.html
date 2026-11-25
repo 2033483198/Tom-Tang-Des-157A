@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIG. | Game of Pig</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><img src="images/logo.svg" alt="PIG." width="119" height="48"></h1>
+        <p class="intro">Dice game<br>First to 30 points wins</p>
+        <p id="round">Round 1</p>
+    </header>
+
+    <main>
+        <section id="score" aria-labelledby="score-title">
+            <h2 id="score-title">SCOREBOARD</h2>
+            <article class="player active">
+                <h3>PLAYER 1</h3>
+                <p class="status">CURRENT TURN</p>
+                <p class="points">12</p>
+                <span class="indicator">ACTIVE</span>
+            </article>
+            <article class="player">
+                <h3>PLAYER 2</h3>
+                <p class="status">WAITING</p>
+                <p class="points">09</p>
+                <span class="indicator">ACTIVE</span>
+            </article>
+        </section>
+
+        <section id="game" aria-labelledby="turn-title">
+            <h2 id="turn-title">Player 1’s turn</h2>
+            <p class="instructions">Roll the dice or pass your turn</p>
+            <div class="dice">
+                <img src="images/dice-4.svg" alt="Dice showing four" width="147" height="147">
+                <img src="images/dice-5.svg" alt="Dice showing five" width="147" height="147">
+            </div>
+            <p id="last-roll">Last roll: 4 + 5 = 9</p>
+            <div id="actions">
+                <button type="button" id="roll">ROLL</button>
+                <button type="button" id="pass">PASS</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
